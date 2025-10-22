@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafío Final - Galería de Personajes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍩 Galería de Personajes de Los Simpsons 🍩</h1>
+            <p class="subtitle">Desafío Final - Consumo de APIs</p>
+        </header>
+
+        <div class="controls">
+            <button id="cargar" class="btn-primary">Cargar Nuevos Personajes</button>
+            
+            <div class="search-container">
+                <input type="text" id="filtro" placeholder="Filtrar por nombre...">
+            </div>
+        </div>
+
+        <div id="loader" class="loader oculto">Cargando...</div>
+
+        <div id="mensaje-error" class="mensaje-error oculto"></div>
+
+        <div id="galeria">
+            <!-- Los personajes se insertarán aquí -->
+        </div>
+
+        <div class="load-more-container">
+            <button id="cargar-mas" class="btn-secondary oculto">Cargar 6 Más</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
